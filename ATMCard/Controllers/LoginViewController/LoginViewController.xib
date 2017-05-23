@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ATMCard" customModuleProvider="target">
+            <connections>
+                <outlet property="inputNumberTextField" destination="4xy-95-NRC" id="SBa-bG-D6Z"/>
+                <outlet property="pinCodeView" destination="DQH-GS-0dP" id="W0N-gx-Ts4"/>
+                <outlet property="userNameLabel" destination="wbg-os-5vD" id="BdZ-i6-nMc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="gcx-W5-Ccm"/>
+                <outletCollection property="numberViews" destination="CFZ-gZ-Q7O" collectionClass="NSMutableArray" id="2QJ-bK-Tq4"/>
+                <outletCollection property="numberViews" destination="IUg-Vw-SaE" collectionClass="NSMutableArray" id="rCM-OV-pIV"/>
+                <outletCollection property="numberViews" destination="cDH-sm-GA5" collectionClass="NSMutableArray" id="2sv-88-S62"/>
+                <outletCollection property="numberViews" destination="3j4-bC-eMx" collectionClass="NSMutableArray" id="87H-ZZ-wG8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xy-95-NRC">
+                    <rect key="frame" x="194" y="237.66666666666669" width="25" height="20.000000000000057"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Gfd-Mo-R7A"/>
+                        <constraint firstAttribute="width" constant="25" id="Sbv-cH-R3a"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="inputValueChangedWithTextField:" destination="-1" eventType="editingChanged" id="PkZ-DJ-xRN"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÕ NGUYỄN CHI PHƯƠNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-os-5vD">
+                    <rect key="frame" x="0.0" y="160" width="414" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeQ-F1-R2e">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lI-a4-wZb">
+                    <rect key="frame" x="82" y="287.66666666666669" width="250" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hQU-Yb-bxb"/>
+                        <constraint firstAttribute="width" constant="250" id="mXu-ew-84I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="   Use fingerprint" image="icon_fingerprint">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="handlerUseFingerPrintWithSender:" destination="-1" eventType="touchUpInside" id="DHn-k0-3XE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input PIN Code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7y-4Y-4yW">
+                    <rect key="frame" x="0.0" y="203" width="414" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQH-GS-0dP" customClass="ShakeView" customModule="ATMCard" customModuleProvider="target">
+                    <rect key="frame" x="137" y="237" width="140" height="20"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-gZ-Q7O">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-Vw-SaE">
+                            <rect key="frame" x="40" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDH-sm-GA5">
+                            <rect key="frame" x="80" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j4-bC-eMx">
+                            <rect key="frame" x="120" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3j4-bC-eMx" firstAttribute="leading" secondItem="cDH-sm-GA5" secondAttribute="trailing" constant="20" id="4Bx-NJ-KHG"/>
+                        <constraint firstAttribute="bottom" secondItem="cDH-sm-GA5" secondAttribute="bottom" id="4Zo-72-UJA"/>
+                        <constraint firstItem="cDH-sm-GA5" firstAttribute="width" secondItem="CFZ-gZ-Q7O" secondAttribute="width" id="8nw-fW-N52"/>
+                        <constraint firstItem="IUg-Vw-SaE" firstAttribute="width" secondItem="CFZ-gZ-Q7O" secondAttribute="width" id="BRX-AZ-1YG"/>
+                        <constraint firstItem="cDH-sm-GA5" firstAttribute="top" secondItem="DQH-GS-0dP" secondAttribute="top" id="DGt-Yz-4dk"/>
+                        <constraint firstAttribute="bottom" secondItem="IUg-Vw-SaE" secondAttribute="bottom" id="DVU-SO-AHF"/>
+                        <constraint firstItem="IUg-Vw-SaE" firstAttribute="top" secondItem="DQH-GS-0dP" secondAttribute="top" id="M4u-eS-Ssr"/>
+                        <constraint firstAttribute="width" constant="140" id="OPt-D0-ENo"/>
+                        <constraint firstItem="cDH-sm-GA5" firstAttribute="height" secondItem="CFZ-gZ-Q7O" secondAttribute="height" id="Q5x-Zg-Sdm"/>
+                        <constraint firstItem="CFZ-gZ-Q7O" firstAttribute="top" secondItem="DQH-GS-0dP" secondAttribute="top" id="Xmk-9j-Uyx"/>
+                        <constraint firstItem="3j4-bC-eMx" firstAttribute="width" secondItem="CFZ-gZ-Q7O" secondAttribute="width" id="Z3s-FF-hGS"/>
+                        <constraint firstItem="3j4-bC-eMx" firstAttribute="top" secondItem="DQH-GS-0dP" secondAttribute="top" id="btg-bK-b2m"/>
+                        <constraint firstItem="CFZ-gZ-Q7O" firstAttribute="leading" secondItem="DQH-GS-0dP" secondAttribute="leading" id="f2F-Z3-hzk"/>
+                        <constraint firstItem="IUg-Vw-SaE" firstAttribute="height" secondItem="CFZ-gZ-Q7O" secondAttribute="height" id="gdx-Ha-glw"/>
+                        <constraint firstItem="cDH-sm-GA5" firstAttribute="leading" secondItem="IUg-Vw-SaE" secondAttribute="trailing" constant="20" id="hgU-UP-Otb"/>
+                        <constraint firstAttribute="trailing" secondItem="3j4-bC-eMx" secondAttribute="trailing" id="j0J-6d-YpJ"/>
+                        <constraint firstItem="IUg-Vw-SaE" firstAttribute="leading" secondItem="CFZ-gZ-Q7O" secondAttribute="trailing" constant="20" id="kB5-o0-uh7"/>
+                        <constraint firstItem="3j4-bC-eMx" firstAttribute="height" secondItem="CFZ-gZ-Q7O" secondAttribute="height" id="owo-32-EAD"/>
+                        <constraint firstAttribute="bottom" secondItem="3j4-bC-eMx" secondAttribute="bottom" id="qxC-iu-XWc"/>
+                        <constraint firstAttribute="bottom" secondItem="CFZ-gZ-Q7O" secondAttribute="bottom" id="tNi-Uv-Z51"/>
+                        <constraint firstAttribute="height" constant="20" id="vDA-5A-APw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.69019607843137254" green="0.0" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DQH-GS-0dP" firstAttribute="top" secondItem="i7y-4Y-4yW" secondAttribute="bottom" constant="13.666666666666686" id="1jT-qY-etM"/>
+                <constraint firstAttribute="trailing" secondItem="AeQ-F1-R2e" secondAttribute="trailing" id="5jZ-uK-zhf"/>
+                <constraint firstItem="i7y-4Y-4yW" firstAttribute="top" secondItem="wbg-os-5vD" secondAttribute="bottom" constant="20" id="DzK-PR-kb1"/>
+                <constraint firstItem="i7y-4Y-4yW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HLv-kG-9ec"/>
+                <constraint firstItem="4xy-95-NRC" firstAttribute="top" secondItem="i7y-4Y-4yW" secondAttribute="bottom" constant="13.666666666666686" id="II5-gh-B9D"/>
+                <constraint firstAttribute="trailing" secondItem="wbg-os-5vD" secondAttribute="trailing" id="JTi-x7-xAW"/>
+                <constraint firstItem="AeQ-F1-R2e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mha-Q8-2PT"/>
+                <constraint firstItem="DQH-GS-0dP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NeH-wr-NSh"/>
+                <constraint firstItem="6lI-a4-wZb" firstAttribute="top" secondItem="4xy-95-NRC" secondAttribute="bottom" constant="29.999999999999943" id="S5D-4d-Ofm"/>
+                <constraint firstItem="AeQ-F1-R2e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SI3-Cu-oGO"/>
+                <constraint firstAttribute="trailing" secondItem="i7y-4Y-4yW" secondAttribute="trailing" id="Wjd-ka-E0W"/>
+                <constraint firstItem="wbg-os-5vD" firstAttribute="top" secondItem="AeQ-F1-R2e" secondAttribute="bottom" id="YnM-6d-Aat"/>
+                <constraint firstItem="6lI-a4-wZb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fDV-f5-sEY"/>
+                <constraint firstItem="wbg-os-5vD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jeg-oH-sfm"/>
+                <constraint firstItem="4xy-95-NRC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mwN-kg-wXO"/>
+                <constraint firstItem="AeQ-F1-R2e" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="145/667" id="ofd-jT-pja"/>
+            </constraints>
+            <point key="canvasLocation" x="15" y="-354"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_fingerprint" width="33" height="33"/>
+    </resources>
+</document>

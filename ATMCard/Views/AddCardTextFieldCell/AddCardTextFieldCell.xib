@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="xIC-PG-LYr" customClass="AddCardTextFieldCell" customModule="ATMCard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xIC-PG-LYr" id="T7h-Le-AcE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzn-ZZ-5hc">
+                        <rect key="frame" x="16" y="0.0" width="100" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="HTv-vo-Hmt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZgE-sz-j1g">
+                        <rect key="frame" x="132" y="0.0" width="235" height="59"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="didChangeValueTextFieldWithSender:" destination="xIC-PG-LYr" eventType="editingChanged" id="aXo-Wp-ZMK"/>
+                        </connections>
+                    </textField>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAY-jg-Xl4">
+                        <rect key="frame" x="334" y="10" width="33" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="wzX-Vt-EXp"/>
+                            <constraint firstAttribute="width" constant="33" id="xoa-4e-bK3"/>
+                        </constraints>
+                        <state key="normal" image="icon_visible"/>
+                        <connections>
+                            <action selector="didSelectVisibleTextWithSender:" destination="xIC-PG-LYr" eventType="touchUpInside" id="ndw-Be-crS"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BAY-jg-Xl4" secondAttribute="trailing" constant="8" id="17g-ru-WbC"/>
+                    <constraint firstAttribute="trailing" secondItem="ZgE-sz-j1g" secondAttribute="trailing" constant="8" id="7A5-6A-EMS"/>
+                    <constraint firstItem="Pzn-ZZ-5hc" firstAttribute="top" secondItem="T7h-Le-AcE" secondAttribute="top" id="A8d-T5-Xfh"/>
+                    <constraint firstAttribute="bottom" secondItem="Pzn-ZZ-5hc" secondAttribute="bottom" id="QE6-iN-PCN"/>
+                    <constraint firstItem="ZgE-sz-j1g" firstAttribute="top" secondItem="T7h-Le-AcE" secondAttribute="top" id="WcW-RO-hO4"/>
+                    <constraint firstAttribute="bottom" secondItem="ZgE-sz-j1g" secondAttribute="bottom" id="gIv-xg-dDG"/>
+                    <constraint firstItem="Pzn-ZZ-5hc" firstAttribute="leading" secondItem="T7h-Le-AcE" secondAttribute="leading" constant="16" id="i1p-9g-cRX"/>
+                    <constraint firstItem="ZgE-sz-j1g" firstAttribute="leading" secondItem="Pzn-ZZ-5hc" secondAttribute="trailing" constant="16" id="jel-zD-fnp"/>
+                    <constraint firstItem="BAY-jg-Xl4" firstAttribute="centerY" secondItem="T7h-Le-AcE" secondAttribute="centerY" id="s0i-J0-4FZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="ZgE-sz-j1g" id="uqU-1Y-dOY"/>
+                <outlet property="titleLabel" destination="Pzn-ZZ-5hc" id="zyc-Rh-Zfn"/>
+                <outlet property="visibleButton" destination="BAY-jg-Xl4" id="imo-XI-r1n"/>
+            </connections>
+            <point key="canvasLocation" x="-262.5" y="-313"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_visible" width="20" height="20"/>
+    </resources>
+</document>

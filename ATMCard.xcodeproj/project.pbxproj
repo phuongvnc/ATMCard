@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5129355B1ECC249400464916 /* CardTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129355A1ECC249400464916 /* CardTypeViewModel.swift */; };
+		5129355E1ECC4F2900464916 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129355D1ECC4F2900464916 /* DataProvider.swift */; };
+		512935601ECC568500464916 /* HomeModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129355F1ECC568500464916 /* HomeModelView.swift */; };
+		512935621ECC56E100464916 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512935611ECC56E100464916 /* Dynamic.swift */; };
+		517E6D071ED2E13100D5002E /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D061ED2E13100D5002E /* BaseXibView.swift */; };
+		517E6D091ED2E19200D5002E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D081ED2E19200D5002E /* TestView.swift */; };
+		517E6D0B1ED2E1B200D5002E /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517E6D0A1ED2E1B200D5002E /* TestView.xib */; };
+		519D1F8B1EBB192700863E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D1F801EBB192700863E74 /* AppDelegate.swift */; };
+		519D1F8C1EBB192700863E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519D1F851EBB192700863E74 /* Assets.xcassets */; };
+		519D1F8D1EBB192700863E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519D1F861EBB192700863E74 /* LaunchScreen.storyboard */; };
+		51B56F8E1EC98E6D005B51A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B56F8D1EC98E6D005B51A0 /* AudioToolbox.framework */; };
+		51B56F901EC98E83005B51A0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F8F1EC98E83005B51A0 /* Helper.swift */; };
+		51B56F941EC999DF005B51A0 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F921EC999DF005B51A0 /* AddCardViewController.swift */; };
+		51B56F951EC999DF005B51A0 /* AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56F931EC999DF005B51A0 /* AddCardViewController.xib */; };
+		51B56F971EC99A46005B51A0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F961EC99A46005B51A0 /* UITableViewExtension.swift */; };
+		51B56F9C1EC99E8B005B51A0 /* AddCardTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F9B1EC99E8B005B51A0 /* AddCardTextFieldCell.swift */; };
+		51B56F9E1EC99E99005B51A0 /* AddCardTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56F9D1EC99E99005B51A0 /* AddCardTextFieldCell.xib */; };
+		51B56FA01EC9A2A3005B51A0 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F9F1EC9A2A3005B51A0 /* Bank.swift */; };
+		51B56FA21EC9B5F3005B51A0 /* bank.json in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FA11EC9B5F3005B51A0 /* bank.json */; };
+		51B56FAA1ECA882E005B51A0 /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FA81ECA882E005B51A0 /* BankListViewController.swift */; };
+		51B56FAB1ECA882E005B51A0 /* BankListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FA91ECA882E005B51A0 /* BankListViewController.xib */; };
+		51B56FAF1ECA88AA005B51A0 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FAD1ECA88AA005B51A0 /* BankCell.swift */; };
+		51B56FB01ECA88AA005B51A0 /* BankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FAE1ECA88AA005B51A0 /* BankCell.xib */; };
+		51B56FB81ECAB44C005B51A0 /* CardTypeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FB61ECAB44C005B51A0 /* CardTypeListViewController.swift */; };
+		51B56FB91ECAB44C005B51A0 /* CardTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FB71ECAB44C005B51A0 /* CardTypeListViewController.xib */; };
+		51B56FBD1ECAB489005B51A0 /* CardTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FBB1ECAB489005B51A0 /* CardTypeCell.swift */; };
+		51B56FBE1ECAB489005B51A0 /* CardTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FBC1ECAB489005B51A0 /* CardTypeCell.xib */; };
+		51B56FC21ECACC6A005B51A0 /* AddCardButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FC01ECACC6A005B51A0 /* AddCardButtonCell.swift */; };
+		51B56FC31ECACC6A005B51A0 /* AddCardButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FC11ECACC6A005B51A0 /* AddCardButtonCell.xib */; };
+		51B56FC81ECACCCD005B51A0 /* ATMDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FC71ECACCCD005B51A0 /* ATMDatePicker.swift */; };
+		51B56FCA1ECADC78005B51A0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FC91ECADC78005B51A0 /* DateExtension.swift */; };
+		51BFB00A1ECD3B3F000F95FF /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB0091ECD3B3F000F95FF /* UINavigationControllerExtension.swift */; };
+		51BFB00C1ECD4348000F95FF /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFB00B1ECD4348000F95FF /* RegisterViewModel.swift */; };
+		51D016151EC436E700F334EB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016141EC436E700F334EB /* UIViewExtension.swift */; };
+		51D016181EC54A1400F334EB /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D016171EC54A1400F334EB /* LocalAuthentication.framework */; };
+		51D016201EC54A3D00F334EB /* ATMCollectionViewFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0161F1EC54A3D00F334EB /* ATMCollectionViewFlowDelegate.swift */; };
+		51D016231EC54A8700F334EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016221EC54A8700F334EB /* BaseViewController.swift */; };
+		51D016261EC551AC00F334EB /* ATMFinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016251EC551AC00F334EB /* ATMFinger.swift */; };
+		51D016291EC55A4600F334EB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016281EC55A4600F334EB /* Card.swift */; };
+		51D0162B1EC5604D00F334EB /* InternetBanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0162A1EC5604D00F334EB /* InternetBanking.swift */; };
+		51D016371EC564CD00F334EB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016361EC564CD00F334EB /* Color.swift */; };
+		51D016391EC5907E00F334EB /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016381EC5907E00F334EB /* UIApplicationExtension.swift */; };
+		51D016401EC5919A00F334EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0163B1EC5919A00F334EB /* HomeViewController.swift */; };
+		51D016411EC5919A00F334EB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D0163C1EC5919A00F334EB /* HomeViewController.xib */; };
+		51D016421EC5919A00F334EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0163E1EC5919A00F334EB /* LoginViewController.swift */; };
+		51D016431EC5919A00F334EB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D0163F1EC5919A00F334EB /* LoginViewController.xib */; };
+		51D016471EC591A600F334EB /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016451EC591A600F334EB /* CardCell.swift */; };
+		51D016481EC591A600F334EB /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D016461EC591A600F334EB /* CardCell.xib */; };
+		51D0164A1EC5988200F334EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016491EC5988200F334EB /* User.swift */; };
+		51D0164D1EC59B2400F334EB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0164C1EC59B2400F334EB /* UserManager.swift */; };
+		51D016511EC59E6500F334EB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0164F1EC59E6500F334EB /* RegisterViewController.swift */; };
+		51D016521EC59E6500F334EB /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51D016501EC59E6500F334EB /* RegisterViewController.xib */; };
+		51D016541EC5B64D00F334EB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016531EC5B64D00F334EB /* BaseNavigationController.swift */; };
+		51D016561EC5B77400F334EB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D016551EC5B77400F334EB /* Strings.swift */; };
+		BD9FB09E4642E000B1974235 /* Pods_ATMCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12FFB93D507A2AB3A964F9 /* Pods_ATMCard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		510CB6A42B813795E7C8E334 /* Pods-ATMCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMCard/Pods-ATMCard.debug.xcconfig"; sourceTree = "<group>"; };
+		5129355A1ECC249400464916 /* CardTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeViewModel.swift; sourceTree = "<group>"; };
+		5129355D1ECC4F2900464916 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		5129355F1ECC568500464916 /* HomeModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModelView.swift; sourceTree = "<group>"; };
+		512935611ECC56E100464916 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		517E6D061ED2E13100D5002E /* BaseXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
+		517E6D081ED2E19200D5002E /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestView.swift; path = TestView/TestView.swift; sourceTree = "<group>"; };
+		517E6D0A1ED2E1B200D5002E /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = TestView/TestView.xib; sourceTree = "<group>"; };
+		519D1F6A1EBB0E3000863E74 /* ATMCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		519D1F801EBB192700863E74 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		519D1F851EBB192700863E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		519D1F871EBB192700863E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		519D1F891EBB192700863E74 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B56F8D1EC98E6D005B51A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		51B56F8F1EC98E83005B51A0 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		51B56F921EC999DF005B51A0 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		51B56F931EC999DF005B51A0 /* AddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardViewController.xib; sourceTree = "<group>"; };
+		51B56F961EC99A46005B51A0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		51B56F9B1EC99E8B005B51A0 /* AddCardTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardTextFieldCell.swift; sourceTree = "<group>"; };
+		51B56F9D1EC99E99005B51A0 /* AddCardTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardTextFieldCell.xib; sourceTree = "<group>"; };
+		51B56F9F1EC9A2A3005B51A0 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		51B56FA11EC9B5F3005B51A0 /* bank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bank.json; path = ../../../../../Downloads/bank.json; sourceTree = "<group>"; };
+		51B56FA81ECA882E005B51A0 /* BankListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
+		51B56FA91ECA882E005B51A0 /* BankListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankListViewController.xib; sourceTree = "<group>"; };
+		51B56FAD1ECA88AA005B51A0 /* BankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
+		51B56FAE1ECA88AA005B51A0 /* BankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCell.xib; sourceTree = "<group>"; };
+		51B56FB61ECAB44C005B51A0 /* CardTypeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeListViewController.swift; sourceTree = "<group>"; };
+		51B56FB71ECAB44C005B51A0 /* CardTypeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTypeListViewController.xib; sourceTree = "<group>"; };
+		51B56FBB1ECAB489005B51A0 /* CardTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeCell.swift; sourceTree = "<group>"; };
+		51B56FBC1ECAB489005B51A0 /* CardTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTypeCell.xib; sourceTree = "<group>"; };
+		51B56FC01ECACC6A005B51A0 /* AddCardButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardButtonCell.swift; sourceTree = "<group>"; };
+		51B56FC11ECACC6A005B51A0 /* AddCardButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardButtonCell.xib; sourceTree = "<group>"; };
+		51B56FC71ECACCCD005B51A0 /* ATMDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMDatePicker.swift; sourceTree = "<group>"; };
+		51B56FC91ECADC78005B51A0 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		51BFB0091ECD3B3F000F95FF /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		51BFB00B1ECD4348000F95FF /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		51D016141EC436E700F334EB /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		51D016171EC54A1400F334EB /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		51D0161F1EC54A3D00F334EB /* ATMCollectionViewFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMCollectionViewFlowDelegate.swift; sourceTree = "<group>"; };
+		51D016221EC54A8700F334EB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		51D016251EC551AC00F334EB /* ATMFinger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMFinger.swift; sourceTree = "<group>"; };
+		51D016281EC55A4600F334EB /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		51D0162A1EC5604D00F334EB /* InternetBanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetBanking.swift; sourceTree = "<group>"; };
+		51D016361EC564CD00F334EB /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		51D016381EC5907E00F334EB /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		51D0163B1EC5919A00F334EB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		51D0163C1EC5919A00F334EB /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		51D0163E1EC5919A00F334EB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		51D0163F1EC5919A00F334EB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		51D016451EC591A600F334EB /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		51D016461EC591A600F334EB /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		51D016491EC5988200F334EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		51D0164C1EC59B2400F334EB /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		51D0164F1EC59E6500F334EB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		51D016501EC59E6500F334EB /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		51D016531EC5B64D00F334EB /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		51D016551EC5B77400F334EB /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		9D12FFB93D507A2AB3A964F9 /* Pods_ATMCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC84A1210F7B42CB971EEDD /* Pods-ATMCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMCard/Pods-ATMCard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		519D1F671EBB0E3000863E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B56F8E1EC98E6D005B51A0 /* AudioToolbox.framework in Frameworks */,
+				51D016181EC54A1400F334EB /* LocalAuthentication.framework in Frameworks */,
+				BD9FB09E4642E000B1974235 /* Pods_ATMCard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330307BBC575865CA7DE5B3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				510CB6A42B813795E7C8E334 /* Pods-ATMCard.debug.xcconfig */,
+				CFC84A1210F7B42CB971EEDD /* Pods-ATMCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5129355C1ECC4E1800464916 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5129355D1ECC4F2900464916 /* DataProvider.swift */,
+				512935611ECC56E100464916 /* Dynamic.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		519D1F611EBB0E3000863E74 = {
+			isa = PBXGroup;
+			children = (
+				519D1F6C1EBB0E3000863E74 /* ATMCard */,
+				519D1F6B1EBB0E3000863E74 /* Products */,
+				51D016161EC54A1400F334EB /* Frameworks */,
+				330307BBC575865CA7DE5B3B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		519D1F6B1EBB0E3000863E74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				519D1F6A1EBB0E3000863E74 /* ATMCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		519D1F6C1EBB0E3000863E74 /* ATMCard */ = {
+			isa = PBXGroup;
+			children = (
+				5129355C1ECC4E1800464916 /* ViewModel */,
+				51D0164B1EC59B1B00F334EB /* Services */,
+				51D016271EC55A3B00F334EB /* Models */,
+				51D016211EC54A6A00F334EB /* Base */,
+				519D1F7F1EBB192700863E74 /* AppDelegate */,
+				519D1F811EBB192700863E74 /* Controllers */,
+				51D016131EC436CF00F334EB /* Extensions */,
+				519D1F821EBB192700863E74 /* Helper */,
+				519D1F831EBB192700863E74 /* Libraries */,
+				519D1F841EBB192700863E74 /* Resources */,
+				519D1F881EBB192700863E74 /* Target */,
+				519D1F8A1EBB192700863E74 /* Views */,
+			);
+			path = ATMCard;
+			sourceTree = "<group>";
+		};
+		519D1F7F1EBB192700863E74 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				519D1F801EBB192700863E74 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		519D1F811EBB192700863E74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FB51ECAB430005B51A0 /* CardTypeListViewController */,
+				51B56FA71ECA882E005B51A0 /* BankListViewController */,
+				51B56F911EC999D2005B51A0 /* AddCardViewController */,
+				51D0164E1EC59E5600F334EB /* RegisterViewController */,
+				51D0163A1EC5919A00F334EB /* HomeViewController */,
+				51D0163D1EC5919A00F334EB /* LoginViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		519D1F821EBB192700863E74 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				51D016361EC564CD00F334EB /* Color.swift */,
+				51D016551EC5B77400F334EB /* Strings.swift */,
+				51B56F8F1EC98E83005B51A0 /* Helper.swift */,
+				51B56FC91ECADC78005B51A0 /* DateExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		519D1F831EBB192700863E74 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FC61ECACCCD005B51A0 /* ATMDatePicker */,
+				51D016241EC5517E00F334EB /* ATMFinger */,
+				51D0161E1EC54A3D00F334EB /* ATMCollectionViewFlowDelegate */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		519D1F841EBB192700863E74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FA11EC9B5F3005B51A0 /* bank.json */,
+				519D1F851EBB192700863E74 /* Assets.xcassets */,
+				519D1F861EBB192700863E74 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		519D1F881EBB192700863E74 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				519D1F891EBB192700863E74 /* Info.plist */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		519D1F8A1EBB192700863E74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FBF1ECACC6A005B51A0 /* AddCardButtonCell */,
+				51B56FBA1ECAB489005B51A0 /* CardTypeCell */,
+				51B56FAC1ECA888E005B51A0 /* BankCell */,
+				51B56F9A1EC99E8B005B51A0 /* AddCardTextFieldCell */,
+				51D016441EC591A600F334EB /* CardCell */,
+				517E6D081ED2E19200D5002E /* TestView.swift */,
+				517E6D0A1ED2E1B200D5002E /* TestView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51B56F911EC999D2005B51A0 /* AddCardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51B56F921EC999DF005B51A0 /* AddCardViewController.swift */,
+				51B56F931EC999DF005B51A0 /* AddCardViewController.xib */,
+			);
+			path = AddCardViewController;
+			sourceTree = "<group>";
+		};
+		51B56F9A1EC99E8B005B51A0 /* AddCardTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				51B56F9B1EC99E8B005B51A0 /* AddCardTextFieldCell.swift */,
+				51B56F9D1EC99E99005B51A0 /* AddCardTextFieldCell.xib */,
+			);
+			path = AddCardTextFieldCell;
+			sourceTree = "<group>";
+		};
+		51B56FA71ECA882E005B51A0 /* BankListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FA81ECA882E005B51A0 /* BankListViewController.swift */,
+				51B56FA91ECA882E005B51A0 /* BankListViewController.xib */,
+			);
+			path = BankListViewController;
+			sourceTree = "<group>";
+		};
+		51B56FAC1ECA888E005B51A0 /* BankCell */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FAD1ECA88AA005B51A0 /* BankCell.swift */,
+				51B56FAE1ECA88AA005B51A0 /* BankCell.xib */,
+			);
+			path = BankCell;
+			sourceTree = "<group>";
+		};
+		51B56FB51ECAB430005B51A0 /* CardTypeListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FB61ECAB44C005B51A0 /* CardTypeListViewController.swift */,
+				51B56FB71ECAB44C005B51A0 /* CardTypeListViewController.xib */,
+				5129355A1ECC249400464916 /* CardTypeViewModel.swift */,
+			);
+			path = CardTypeListViewController;
+			sourceTree = "<group>";
+		};
+		51B56FBA1ECAB489005B51A0 /* CardTypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FBB1ECAB489005B51A0 /* CardTypeCell.swift */,
+				51B56FBC1ECAB489005B51A0 /* CardTypeCell.xib */,
+			);
+			path = CardTypeCell;
+			sourceTree = "<group>";
+		};
+		51B56FBF1ECACC6A005B51A0 /* AddCardButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FC01ECACC6A005B51A0 /* AddCardButtonCell.swift */,
+				51B56FC11ECACC6A005B51A0 /* AddCardButtonCell.xib */,
+			);
+			path = AddCardButtonCell;
+			sourceTree = "<group>";
+		};
+		51B56FC61ECACCCD005B51A0 /* ATMDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				51B56FC71ECACCCD005B51A0 /* ATMDatePicker.swift */,
+			);
+			path = ATMDatePicker;
+			sourceTree = "<group>";
+		};
+		51D016131EC436CF00F334EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51D016141EC436E700F334EB /* UIViewExtension.swift */,
+				51D016381EC5907E00F334EB /* UIApplicationExtension.swift */,
+				51B56F961EC99A46005B51A0 /* UITableViewExtension.swift */,
+				51BFB0091ECD3B3F000F95FF /* UINavigationControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		51D016161EC54A1400F334EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B56F8D1EC98E6D005B51A0 /* AudioToolbox.framework */,
+				51D016171EC54A1400F334EB /* LocalAuthentication.framework */,
+				9D12FFB93D507A2AB3A964F9 /* Pods_ATMCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51D0161E1EC54A3D00F334EB /* ATMCollectionViewFlowDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				51D0161F1EC54A3D00F334EB /* ATMCollectionViewFlowDelegate.swift */,
+			);
+			path = ATMCollectionViewFlowDelegate;
+			sourceTree = "<group>";
+		};
+		51D016211EC54A6A00F334EB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				51D016221EC54A8700F334EB /* BaseViewController.swift */,
+				51D016531EC5B64D00F334EB /* BaseNavigationController.swift */,
+				517E6D061ED2E13100D5002E /* BaseXibView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		51D016241EC5517E00F334EB /* ATMFinger */ = {
+			isa = PBXGroup;
+			children = (
+				51D016251EC551AC00F334EB /* ATMFinger.swift */,
+			);
+			path = ATMFinger;
+			sourceTree = "<group>";
+		};
+		51D016271EC55A3B00F334EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51D016281EC55A4600F334EB /* Card.swift */,
+				51D0162A1EC5604D00F334EB /* InternetBanking.swift */,
+				51D016491EC5988200F334EB /* User.swift */,
+				51B56F9F1EC9A2A3005B51A0 /* Bank.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51D0163A1EC5919A00F334EB /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51D0163B1EC5919A00F334EB /* HomeViewController.swift */,
+				51D0163C1EC5919A00F334EB /* HomeViewController.xib */,
+				5129355F1ECC568500464916 /* HomeModelView.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		51D0163D1EC5919A00F334EB /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51D0163E1EC5919A00F334EB /* LoginViewController.swift */,
+				51D0163F1EC5919A00F334EB /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		51D016441EC591A600F334EB /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				51D016451EC591A600F334EB /* CardCell.swift */,
+				51D016461EC591A600F334EB /* CardCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		51D0164B1EC59B1B00F334EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				51D0164C1EC59B2400F334EB /* UserManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		51D0164E1EC59E5600F334EB /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51D0164F1EC59E6500F334EB /* RegisterViewController.swift */,
+				51D016501EC59E6500F334EB /* RegisterViewController.xib */,
+				51BFB00B1ECD4348000F95FF /* RegisterViewModel.swift */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		519D1F691EBB0E3000863E74 /* ATMCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 519D1F7C1EBB0E3000863E74 /* Build configuration list for PBXNativeTarget "ATMCard" */;
+			buildPhases = (
+				0EC2705AC9337251DBD1E566 /* [CP] Check Pods Manifest.lock */,
+				519D1F661EBB0E3000863E74 /* Sources */,
+				519D1F671EBB0E3000863E74 /* Frameworks */,
+				519D1F681EBB0E3000863E74 /* Resources */,
+				BAEF3865AD067686776DECD8 /* [CP] Embed Pods Frameworks */,
+				78A4D76A85028A0BE7CE1095 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATMCard;
+			productName = ATMCard;
+			productReference = 519D1F6A1EBB0E3000863E74 /* ATMCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		519D1F621EBB0E3000863E74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Vo Nguyen Chi Phuong";
+				TargetAttributes = {
+					519D1F691EBB0E3000863E74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G634GDT76N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 519D1F651EBB0E3000863E74 /* Build configuration list for PBXProject "ATMCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 519D1F611EBB0E3000863E74;
+			productRefGroup = 519D1F6B1EBB0E3000863E74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				519D1F691EBB0E3000863E74 /* ATMCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		519D1F681EBB0E3000863E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B56FA21EC9B5F3005B51A0 /* bank.json in Resources */,
+				51D016431EC5919A00F334EB /* LoginViewController.xib in Resources */,
+				51B56F951EC999DF005B51A0 /* AddCardViewController.xib in Resources */,
+				517E6D0B1ED2E1B200D5002E /* TestView.xib in Resources */,
+				51B56FB01ECA88AA005B51A0 /* BankCell.xib in Resources */,
+				51D016481EC591A600F334EB /* CardCell.xib in Resources */,
+				519D1F8C1EBB192700863E74 /* Assets.xcassets in Resources */,
+				519D1F8D1EBB192700863E74 /* LaunchScreen.storyboard in Resources */,
+				51B56FC31ECACC6A005B51A0 /* AddCardButtonCell.xib in Resources */,
+				51B56FB91ECAB44C005B51A0 /* CardTypeListViewController.xib in Resources */,
+				51B56FBE1ECAB489005B51A0 /* CardTypeCell.xib in Resources */,
+				51B56FAB1ECA882E005B51A0 /* BankListViewController.xib in Resources */,
+				51B56F9E1EC99E99005B51A0 /* AddCardTextFieldCell.xib in Resources */,
+				51D016411EC5919A00F334EB /* HomeViewController.xib in Resources */,
+				51D016521EC59E6500F334EB /* RegisterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EC2705AC9337251DBD1E566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78A4D76A85028A0BE7CE1095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMCard/Pods-ATMCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAEF3865AD067686776DECD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMCard/Pods-ATMCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		519D1F661EBB0E3000863E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5129355E1ECC4F2900464916 /* DataProvider.swift in Sources */,
+				517E6D091ED2E19200D5002E /* TestView.swift in Sources */,
+				517E6D071ED2E13100D5002E /* BaseXibView.swift in Sources */,
+				51D0164A1EC5988200F334EB /* User.swift in Sources */,
+				51D016151EC436E700F334EB /* UIViewExtension.swift in Sources */,
+				512935601ECC568500464916 /* HomeModelView.swift in Sources */,
+				519D1F8B1EBB192700863E74 /* AppDelegate.swift in Sources */,
+				51D016371EC564CD00F334EB /* Color.swift in Sources */,
+				51D016261EC551AC00F334EB /* ATMFinger.swift in Sources */,
+				51B56FCA1ECADC78005B51A0 /* DateExtension.swift in Sources */,
+				51B56FC21ECACC6A005B51A0 /* AddCardButtonCell.swift in Sources */,
+				51B56F901EC98E83005B51A0 /* Helper.swift in Sources */,
+				51B56FAA1ECA882E005B51A0 /* BankListViewController.swift in Sources */,
+				51BFB00A1ECD3B3F000F95FF /* UINavigationControllerExtension.swift in Sources */,
+				51B56FC81ECACCCD005B51A0 /* ATMDatePicker.swift in Sources */,
+				51B56FB81ECAB44C005B51A0 /* CardTypeListViewController.swift in Sources */,
+				51D016201EC54A3D00F334EB /* ATMCollectionViewFlowDelegate.swift in Sources */,
+				51B56FA01EC9A2A3005B51A0 /* Bank.swift in Sources */,
+				51BFB00C1ECD4348000F95FF /* RegisterViewModel.swift in Sources */,
+				512935621ECC56E100464916 /* Dynamic.swift in Sources */,
+				51D016511EC59E6500F334EB /* RegisterViewController.swift in Sources */,
+				51D016401EC5919A00F334EB /* HomeViewController.swift in Sources */,
+				51D016541EC5B64D00F334EB /* BaseNavigationController.swift in Sources */,
+				51B56F941EC999DF005B51A0 /* AddCardViewController.swift in Sources */,
+				51B56FBD1ECAB489005B51A0 /* CardTypeCell.swift in Sources */,
+				51B56FAF1ECA88AA005B51A0 /* BankCell.swift in Sources */,
+				51B56F971EC99A46005B51A0 /* UITableViewExtension.swift in Sources */,
+				5129355B1ECC249400464916 /* CardTypeViewModel.swift in Sources */,
+				51D016391EC5907E00F334EB /* UIApplicationExtension.swift in Sources */,
+				51D016231EC54A8700F334EB /* BaseViewController.swift in Sources */,
+				51D0164D1EC59B2400F334EB /* UserManager.swift in Sources */,
+				51D016561EC5B77400F334EB /* Strings.swift in Sources */,
+				51D0162B1EC5604D00F334EB /* InternetBanking.swift in Sources */,
+				51D016291EC55A4600F334EB /* Card.swift in Sources */,
+				51D016421EC5919A00F334EB /* LoginViewController.swift in Sources */,
+				51B56F9C1EC99E8B005B51A0 /* AddCardTextFieldCell.swift in Sources */,
+				51D016471EC591A600F334EB /* CardCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		519D1F861EBB192700863E74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519D1F871EBB192700863E74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		519D1F7A1EBB0E3000863E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		519D1F7B1EBB0E3000863E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		519D1F7D1EBB0E3000863E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510CB6A42B813795E7C8E334 /* Pods-ATMCard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G634GDT76N;
+				INFOPLIST_FILE = "$(SRCROOT)/ATMCard/Target/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cp.dev.ATMCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		519D1F7E1EBB0E3000863E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC84A1210F7B42CB971EEDD /* Pods-ATMCard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G634GDT76N;
+				INFOPLIST_FILE = "$(SRCROOT)/ATMCard/Target/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cp.dev.ATMCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		519D1F651EBB0E3000863E74 /* Build configuration list for PBXProject "ATMCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519D1F7A1EBB0E3000863E74 /* Debug */,
+				519D1F7B1EBB0E3000863E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		519D1F7C1EBB0E3000863E74 /* Build configuration list for PBXNativeTarget "ATMCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519D1F7D1EBB0E3000863E74 /* Debug */,
+				519D1F7E1EBB0E3000863E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 519D1F621EBB0E3000863E74 /* Project object */;
+}
