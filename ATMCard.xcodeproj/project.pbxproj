@@ -14,9 +14,12 @@
 		517E6D071ED2E13100D5002E /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D061ED2E13100D5002E /* BaseXibView.swift */; };
 		517E6D091ED2E19200D5002E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E6D081ED2E19200D5002E /* TestView.swift */; };
 		517E6D0B1ED2E1B200D5002E /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517E6D0A1ED2E1B200D5002E /* TestView.xib */; };
+		5180B83B1ED7181400F9EC79 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180B83A1ED7181400F9EC79 /* UIImageViewExtension.swift */; };
+		5180B83D1ED719C400F9EC79 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180B83C1ED719C400F9EC79 /* UIColorExtension.swift */; };
 		519D1F8B1EBB192700863E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D1F801EBB192700863E74 /* AppDelegate.swift */; };
 		519D1F8C1EBB192700863E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519D1F851EBB192700863E74 /* Assets.xcassets */; };
 		519D1F8D1EBB192700863E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519D1F861EBB192700863E74 /* LaunchScreen.storyboard */; };
+		51B47A911ED43BBD00C0328F /* bank.json in Resources */ = {isa = PBXBuildFile; fileRef = 51B47A901ED43BBD00C0328F /* bank.json */; };
 		51B56F8E1EC98E6D005B51A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B56F8D1EC98E6D005B51A0 /* AudioToolbox.framework */; };
 		51B56F901EC98E83005B51A0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F8F1EC98E83005B51A0 /* Helper.swift */; };
 		51B56F941EC999DF005B51A0 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F921EC999DF005B51A0 /* AddCardViewController.swift */; };
@@ -25,7 +28,6 @@
 		51B56F9C1EC99E8B005B51A0 /* AddCardTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F9B1EC99E8B005B51A0 /* AddCardTextFieldCell.swift */; };
 		51B56F9E1EC99E99005B51A0 /* AddCardTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56F9D1EC99E99005B51A0 /* AddCardTextFieldCell.xib */; };
 		51B56FA01EC9A2A3005B51A0 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56F9F1EC9A2A3005B51A0 /* Bank.swift */; };
-		51B56FA21EC9B5F3005B51A0 /* bank.json in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FA11EC9B5F3005B51A0 /* bank.json */; };
 		51B56FAA1ECA882E005B51A0 /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FA81ECA882E005B51A0 /* BankListViewController.swift */; };
 		51B56FAB1ECA882E005B51A0 /* BankListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B56FA91ECA882E005B51A0 /* BankListViewController.xib */; };
 		51B56FAF1ECA88AA005B51A0 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B56FAD1ECA88AA005B51A0 /* BankCell.swift */; };
@@ -73,11 +75,14 @@
 		517E6D061ED2E13100D5002E /* BaseXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
 		517E6D081ED2E19200D5002E /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestView.swift; path = TestView/TestView.swift; sourceTree = "<group>"; };
 		517E6D0A1ED2E1B200D5002E /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = TestView/TestView.xib; sourceTree = "<group>"; };
+		5180B83A1ED7181400F9EC79 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		5180B83C1ED719C400F9EC79 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		519D1F6A1EBB0E3000863E74 /* ATMCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		519D1F801EBB192700863E74 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		519D1F851EBB192700863E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		519D1F871EBB192700863E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		519D1F891EBB192700863E74 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B47A901ED43BBD00C0328F /* bank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bank.json; sourceTree = "<group>"; };
 		51B56F8D1EC98E6D005B51A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		51B56F8F1EC98E83005B51A0 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		51B56F921EC999DF005B51A0 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +91,6 @@
 		51B56F9B1EC99E8B005B51A0 /* AddCardTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardTextFieldCell.swift; sourceTree = "<group>"; };
 		51B56F9D1EC99E99005B51A0 /* AddCardTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardTextFieldCell.xib; sourceTree = "<group>"; };
 		51B56F9F1EC9A2A3005B51A0 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
-		51B56FA11EC9B5F3005B51A0 /* bank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bank.json; path = ../../../../../Downloads/bank.json; sourceTree = "<group>"; };
 		51B56FA81ECA882E005B51A0 /* BankListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
 		51B56FA91ECA882E005B51A0 /* BankListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankListViewController.xib; sourceTree = "<group>"; };
 		51B56FAD1ECA88AA005B51A0 /* BankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
@@ -240,7 +244,7 @@
 		519D1F841EBB192700863E74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				51B56FA11EC9B5F3005B51A0 /* bank.json */,
+				51B47A901ED43BBD00C0328F /* bank.json */,
 				519D1F851EBB192700863E74 /* Assets.xcassets */,
 				519D1F861EBB192700863E74 /* LaunchScreen.storyboard */,
 			);
@@ -344,6 +348,8 @@
 		51D016131EC436CF00F334EB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5180B83A1ED7181400F9EC79 /* UIImageViewExtension.swift */,
+				5180B83C1ED719C400F9EC79 /* UIColorExtension.swift */,
 				51D016141EC436E700F334EB /* UIViewExtension.swift */,
 				51D016381EC5907E00F334EB /* UIApplicationExtension.swift */,
 				51B56F961EC99A46005B51A0 /* UITableViewExtension.swift */,
@@ -508,7 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B56FA21EC9B5F3005B51A0 /* bank.json in Resources */,
+				51B47A911ED43BBD00C0328F /* bank.json in Resources */,
 				51D016431EC5919A00F334EB /* LoginViewController.xib in Resources */,
 				51B56F951EC999DF005B51A0 /* AddCardViewController.xib in Resources */,
 				517E6D0B1ED2E1B200D5002E /* TestView.xib in Resources */,
@@ -598,11 +604,13 @@
 				51B56FC81ECACCCD005B51A0 /* ATMDatePicker.swift in Sources */,
 				51B56FB81ECAB44C005B51A0 /* CardTypeListViewController.swift in Sources */,
 				51D016201EC54A3D00F334EB /* ATMCollectionViewFlowDelegate.swift in Sources */,
+				5180B83D1ED719C400F9EC79 /* UIColorExtension.swift in Sources */,
 				51B56FA01EC9A2A3005B51A0 /* Bank.swift in Sources */,
 				51BFB00C1ECD4348000F95FF /* RegisterViewModel.swift in Sources */,
 				512935621ECC56E100464916 /* Dynamic.swift in Sources */,
 				51D016511EC59E6500F334EB /* RegisterViewController.swift in Sources */,
 				51D016401EC5919A00F334EB /* HomeViewController.swift in Sources */,
+				5180B83B1ED7181400F9EC79 /* UIImageViewExtension.swift in Sources */,
 				51D016541EC5B64D00F334EB /* BaseNavigationController.swift in Sources */,
 				51B56F941EC999DF005B51A0 /* AddCardViewController.swift in Sources */,
 				51B56FBD1ECAB489005B51A0 /* CardTypeCell.swift in Sources */,

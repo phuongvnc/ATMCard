@@ -14,6 +14,7 @@ protocol  ATMCollectionViewLayoutDelegate: class {
     func collectionViewLayout(colletionViewLayout: ATMCollectionViewLayout, insetForSection section: Int) -> UIEdgeInsets
 
     func collectionViewLayout(collectionViewLayout: ATMCollectionViewLayout, sizeForHeaderSection section: Int) -> CGSize
+
 }
 
 extension ATMCollectionViewLayoutDelegate {
@@ -28,6 +29,7 @@ extension ATMCollectionViewLayoutDelegate {
     func collectionViewLayout(collectionViewLayout: ATMCollectionViewLayout, sizeForHeaderSection section: Int) -> CGSize {
         return CGSize.zero
     }
+
 }
 
 

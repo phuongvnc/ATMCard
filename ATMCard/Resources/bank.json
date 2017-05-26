@@ -1,0 +1,239 @@
+{
+  "banks": [
+    {
+      "index": 1,
+      "name": "Ngân hàng An Bình",
+      "image": "logo_ab_bank",
+      "trading_name": "ABBANK"
+    },
+    {
+      "index": 2,
+      "name": "Ngân hàng Á Châu",
+      "image": "logo_acb_bank",
+      "trading_name": "ACB"
+    },
+    {
+      "index": 3,
+      "name": "Ngân hàng Nông nghiệp và Phát triển Nông thôn VN",
+      "image": "logo_agri_bank",
+      "trading_name": "Agribank"
+    },
+    {
+      "index": 4,
+      "name": "Ngân hàng TNHH một thành viên ANZ ",
+      "image": "logo_anz_bank",
+      "trading_name": "ANZ"
+    },
+    {
+      "index": 5,
+      "name": "Ngân hàng Bắc Á",
+      "image": "logo_bac_a_bank",
+      "trading_name": "BacABank"
+    },
+    {
+      "index": 6,
+      "name": "Ngân hàng Bảo Việt",
+      "image": "logo_baoviet_bank",
+      "trading_name": "BaoVietBank"
+    },
+    {
+      "index": 7,
+      "name": "Ngân hàng Đầu tư và Phát triển Việt Nam",
+      "image": "logo_bidv_bank",
+      "trading_name": "BID"
+    },
+    {
+      "index": 8,
+      "name": "Ngân hàng Xây dựng",
+      "image": "logo_cb_bank",
+      "trading_name": "CB"
+    },
+    {
+      "index": 9,
+      "name": "Ngân hàng Citibank Việt Nam",
+      "image": "logo_citi_bank",
+      "trading_name": "Citibank"
+    },
+    {
+      "index": 10,
+      "name": "Ngân hàng Đông Á",
+      "image": "logo_dong_a_bank",
+      "trading_name": "DAF"
+    },
+    {
+      "index": 11,
+      "name": "Ngân hàng Xuất Nhập khẩu Việt Nam",
+      "image": "logo_exim_bank",
+      "trading_name": "Eximbank, EIB"
+    },
+    {
+      "index": 12,
+      "name": "Ngân hàng Dầu Khí Toàn Cầu",
+      "image": "logo_gp_bank",
+      "trading_name": "GPBank"
+    },
+    {
+      "index": 13,
+      "name": "Ngân hàng Phát triển Thành phố Hồ Chí Minh",
+      "image": "logo_hd_bank",
+      "trading_name": "HDBank"
+    },
+    {
+      "index": 14,
+      "name": "Ngân hàng TNHH một thành viên HSBC (Việt Nam)",
+      "image": "logo_hsbc_bank",
+      "trading_name": "HSBC"
+    },
+    {
+      "index": 15,
+      "name": "Ngân hàng Kiên Long",
+      "image": "logo_kienlong_bank",
+      "trading_name": "KienLongBank"
+    },
+    {
+      "index": 16,
+      "name": "Ngân hàng Bưu điện Liên Việt",
+      "image": "logo_lienviet_bank",
+      "trading_name": "LPB"
+    },
+    {
+      "index": 17,
+      "name": "Ngân hàng Hàng Hải Việt Nam",
+      "image": "logo_maritime_bank",
+      "trading_name": "MSB"
+    },
+    {
+      "index": 18,
+      "name": "Ngân hàng Quân đội",
+      "image": "logo_mb_bank",
+      "trading_name": "Military Bank, MBB"
+    },
+    {
+      "index": 19,
+      "name": "Ngân hàng Nam Á",
+      "image": "logo_nama_bank",
+      "trading_name": "NamABank"
+    },
+    {
+      "index": 20,
+      "name": "Ngân hàng Quốc Dân",
+      "image": "logo_ncb_bank",
+      "trading_name": "NCB"
+    },
+    {
+      "index": 21,
+      "name": "Ngân hàng Phương Đông",
+      "image": "logo_ocb_bank",
+      "trading_name": "OCB"
+    },
+    {
+      "index": 22,
+      "name": "Ngân hàng Đại Dương",
+      "image": "logo_ocean_bank",
+      "trading_name": "OceanBank"
+    },
+    {
+      "index": 23,
+      "name": "Ngân hàng Xăng dầu Petrolimex",
+      "image": "logo_pg_bank",
+      "trading_name": "PGB"
+    },
+    {
+      "index": 24,
+      "name": "Ngân hàng TMCP Đại Chúng Việt Nam",
+      "image": "logo_pv_bank",
+      "trading_name": "PVcomBank"
+    },
+    {
+      "index": 25,
+      "name": "Ngân Hàng TMCP Sài Gòn Công Thương",
+      "image": "logo_saigon_bank",
+      "trading_name": "SGB"
+    },
+    {
+      "index": 26,
+      "name": "Ngân hàng thương mại cổ phần Sài Gòn Thương Tín",
+      "image": "logo_scacom_bank",
+      "trading_name": "STB"
+    },
+    {
+      "index": 27,
+      "name": "Ngân hàng TMCP Sài Gòn",
+      "image": "logo_scb_bank",
+      "trading_name": "SCB"
+    },
+    {
+      "index": 28,
+      "name": "Ngân hàng Đông Nam Á",
+      "image": "logo_sea_bank",
+      "trading_name": "SEABank"
+    },
+    {
+      "index": 29,
+      "name": "Ngân hàng Sài Gòn - Hà Nội",
+      "image": "logo_shb_bank",
+      "trading_name": "SHB"
+    },
+    {
+      "index": 30,
+      "name": "Ngân hàng TNHH MTV Shinhan Việt Nam",
+      "image": "logo_shinhan_bank",
+      "trading_name": "SHBVN"
+    },
+    {
+      "index": 31,
+      "name": "Ngân hàng TMCP Kỹ Thương Việt Nam",
+      "image": "logo_techcom_bank",
+      "trading_name": "Techcombank"
+    },
+    {
+      "index": 32,
+      "name": "Ngân hàng TMCP Việt Á",
+      "image": "logo_vieta_bank",
+      "trading_name": "VAB"
+    },
+    {
+      "index": 33,
+      "name": "Ngân hàng Tiên Phong",
+      "image": "logo_tp_bank",
+      "trading_name": "TPBank"
+    },
+    {
+      "index": 34,
+      "name": "Ngân hàng TMCP Quốc tế",
+      "image": "logo_vib_bank",
+      "trading_name": "VIB"
+    },
+    {
+      "index": 35,
+      "name": "Ngân hàng Việt Nam Thương Tín",
+      "image": "logo_viet_bank",
+      "trading_name": "VietBank"
+    },
+    {
+      "index": 36,
+      "name": "Ngân hàng TMCP Bản Việt",
+      "image": "logo_viet_capital_bank",
+      "trading_name": "VietCapitalBank"
+    },
+    {
+      "index": 37,
+      "name": "Ngân hàng TMCP Ngoại thương Việt Nam",
+      "image": "logo_vietcom_bank",
+      "trading_name": "VCB"
+    },
+    {
+      "index": 38,
+      "name": "Ngân hàng TMCP Công Thương Việt Nam",
+      "image": "logo_vietin_bank",
+      "trading_name": "CTG"
+    },
+    {
+      "index": 39,
+      "name": "Ngân hàng TMCP Việt Nam Thịnh Vượng",
+      "image": "logo_vp_bank",
+      "trading_name": "VPBank"
+    }
+
+  ]
+}
