@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510475631EDBC5080068D817 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510475621EDBC5080068D817 /* XCTest.framework */; };
+		510475A51EDBD07E0068D817 /* ATMCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510475A41EDBD07E0068D817 /* ATMCardUITests.swift */; };
 		5129355B1ECC249400464916 /* CardTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129355A1ECC249400464916 /* CardTypeViewModel.swift */; };
 		5129355E1ECC4F2900464916 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129355D1ECC4F2900464916 /* DataProvider.swift */; };
 		512935601ECC568500464916 /* HomeModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129355F1ECC568500464916 /* HomeModelView.swift */; };
@@ -66,7 +68,21 @@
 		BD9FB09E4642E000B1974235 /* Pods_ATMCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12FFB93D507A2AB3A964F9 /* Pods_ATMCard.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		510475A71EDBD07E0068D817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519D1F621EBB0E3000863E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 519D1F691EBB0E3000863E74;
+			remoteInfo = ATMCard;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		510475621EDBC5080068D817 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		510475A21EDBD07E0068D817 /* ATMCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		510475A41EDBD07E0068D817 /* ATMCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMCardUITests.swift; sourceTree = "<group>"; };
+		510475A61EDBD07E0068D817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510CB6A42B813795E7C8E334 /* Pods-ATMCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMCard/Pods-ATMCard.debug.xcconfig"; sourceTree = "<group>"; };
 		5129355A1ECC249400464916 /* CardTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeViewModel.swift; sourceTree = "<group>"; };
 		5129355D1ECC4F2900464916 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -131,10 +147,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5104759F1EDBD07E0068D817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		519D1F671EBB0E3000863E74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510475631EDBC5080068D817 /* XCTest.framework in Frameworks */,
 				51B56F8E1EC98E6D005B51A0 /* AudioToolbox.framework in Frameworks */,
 				51D016181EC54A1400F334EB /* LocalAuthentication.framework in Frameworks */,
 				BD9FB09E4642E000B1974235 /* Pods_ATMCard.framework in Frameworks */,
@@ -153,6 +177,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		510475A31EDBD07E0068D817 /* ATMCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				510475A41EDBD07E0068D817 /* ATMCardUITests.swift */,
+				510475A61EDBD07E0068D817 /* Info.plist */,
+			);
+			path = ATMCardUITests;
+			sourceTree = "<group>";
+		};
 		5129355C1ECC4E1800464916 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				519D1F6C1EBB0E3000863E74 /* ATMCard */,
+				510475A31EDBD07E0068D817 /* ATMCardUITests */,
 				519D1F6B1EBB0E3000863E74 /* Products */,
 				51D016161EC54A1400F334EB /* Frameworks */,
 				330307BBC575865CA7DE5B3B /* Pods */,
@@ -176,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				519D1F6A1EBB0E3000863E74 /* ATMCard.app */,
+				510475A21EDBD07E0068D817 /* ATMCardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,6 +396,7 @@
 		51D016161EC54A1400F334EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				510475621EDBC5080068D817 /* XCTest.framework */,
 				51B56F8D1EC98E6D005B51A0 /* AudioToolbox.framework */,
 				51D016171EC54A1400F334EB /* LocalAuthentication.framework */,
 				9D12FFB93D507A2AB3A964F9 /* Pods_ATMCard.framework */,
@@ -454,6 +490,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		510475A11EDBD07E0068D817 /* ATMCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510475A91EDBD07E0068D817 /* Build configuration list for PBXNativeTarget "ATMCardUITests" */;
+			buildPhases = (
+				5104759E1EDBD07E0068D817 /* Sources */,
+				5104759F1EDBD07E0068D817 /* Frameworks */,
+				510475A01EDBD07E0068D817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				510475A81EDBD07E0068D817 /* PBXTargetDependency */,
+			);
+			name = ATMCardUITests;
+			productName = ATMCardUITests;
+			productReference = 510475A21EDBD07E0068D817 /* ATMCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		519D1F691EBB0E3000863E74 /* ATMCard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 519D1F7C1EBB0E3000863E74 /* Build configuration list for PBXNativeTarget "ATMCard" */;
@@ -484,6 +538,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Vo Nguyen Chi Phuong";
 				TargetAttributes = {
+					510475A11EDBD07E0068D817 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G634GDT76N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 519D1F691EBB0E3000863E74;
+					};
 					519D1F691EBB0E3000863E74 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = G634GDT76N;
@@ -505,11 +565,19 @@
 			projectRoot = "";
 			targets = (
 				519D1F691EBB0E3000863E74 /* ATMCard */,
+				510475A11EDBD07E0068D817 /* ATMCardUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		510475A01EDBD07E0068D817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		519D1F681EBB0E3000863E74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,7 +615,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		78A4D76A85028A0BE7CE1095 /* [CP] Copy Pods Resources */ = {
@@ -583,6 +651,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5104759E1EDBD07E0068D817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510475A51EDBD07E0068D817 /* ATMCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		519D1F661EBB0E3000863E74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,6 +707,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		510475A81EDBD07E0068D817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 519D1F691EBB0E3000863E74 /* ATMCard */;
+			targetProxy = 510475A71EDBD07E0068D817 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		519D1F861EBB192700863E74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -643,6 +727,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		510475AA1EDBD07E0068D817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G634GDT76N;
+				INFOPLIST_FILE = ATMCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cp.dev.ATMCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ATMCard;
+			};
+			name = Debug;
+		};
+		510475AB1EDBD07E0068D817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G634GDT76N;
+				INFOPLIST_FILE = ATMCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cp.dev.ATMCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ATMCard;
+			};
+			name = Release;
+		};
 		519D1F7A1EBB0E3000863E74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -765,6 +875,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		510475A91EDBD07E0068D817 /* Build configuration list for PBXNativeTarget "ATMCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510475AA1EDBD07E0068D817 /* Debug */,
+				510475AB1EDBD07E0068D817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		519D1F651EBB0E3000863E74 /* Build configuration list for PBXProject "ATMCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
